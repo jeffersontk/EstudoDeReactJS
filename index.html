@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React para Iniciantes</title>
+
+    <!-- Carrega o React, React Dom e Babel -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="app">App</div>
+</body>
+
+<!-- Precisa indicar para o Babel que ele deve transpilar o código -->
+<script type="text/babel">
+
+    // O componente retorna JSX e por isso
+    //function component
+    const Button = ()=>{
+        return <button>clique Aqui</button>
+    }
+    //class component
+    class Input extends React.Component {
+        render(){
+            return <input type="text"></input>
+        }
+    }
+    
+    const MainNav = ()=>{
+        return  <nav> 
+                    <ul> 
+                        <li> teste 1 </li>
+                        <li> teste 2 </li>
+                    </ul>
+                </nav>
+    }
+
+    // Cria um componente chamado App
+    function App() {
+        return <div>
+            <h1> hellow world </h1>
+            <MainNav/>
+            <Input/>
+            <Button/>
+            </div>
+    }
+    
+    
+  // o Babel irá transformar o mesmo
+  // Renderiza o componente App no elemento que tiver id = app
+  ReactDOM.render(<App />, document.getElementById("app"));
+</script>
+
+</html>
