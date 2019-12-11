@@ -1,9 +1,9 @@
 import React from "react";
-import Atributos from "./Components/Atributos";
+import Compras from "./Components/Compras.jsx";
 const App = () => {
   return (
     <>
-      <Atributos />
+      <Compras />
     </>
   );
 };
