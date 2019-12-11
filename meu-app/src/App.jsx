@@ -1,9 +1,9 @@
 import React from "react";
-import FetchEuseEffect from "./Components/FetchEuseEffect";
+import Props from "./Components/Props";
 const App = () => {
   return (
     <>
-      <FetchEuseEffect />
+      <Props />
     </>
   );
 };
