@@ -1,9 +1,9 @@
 import React from "react";
-import Empresa from "./Empresa";
+import Atributos from "./Components/Atributos";
 const App = () => {
   return (
     <>
-      <Empresa />
+      <Atributos />
     </>
   );
 };
