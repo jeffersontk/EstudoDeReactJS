@@ -1,11 +1,9 @@
 import React from "react";
-import Home from "./Home.jsx";
-import Header from "./Header";
+import Empresa from "./Empresa";
 const App = () => {
   return (
     <>
-      <Header />
-      <Home />
+      <Empresa />
     </>
   );
 };
