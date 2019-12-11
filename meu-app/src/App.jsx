@@ -1,11 +1,13 @@
 import React from "react";
-import Compras from "./Components/Compras.jsx";
-import Colors from "./Components/Colors.jsx";
+import UseEffect from "./Components/UseEffect";
+import FetchEuseEffect from "./Components/FetchEuseEffect";
 const App = () => {
   return (
     <>
       <Compras />
       <Colors />
+      <UseEffect />
+      <FetchEuseEffect />
     </>
   );
 };

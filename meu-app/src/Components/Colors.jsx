@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Colors = () => {
   const [color, setColor] = useState("red");
@@ -9,14 +9,19 @@ const Colors = () => {
     height: "200px"
   };
 
+  useEffect(() => {
+    console.log("teste");
+  }, []);
+
   return (
     <div>
+      <div>{color}</div>
+      <div style={style}></div>
       {colors.map(color => (
         <button key={color} onClick={() => setColor(color)}>
           {color}
         </button>
       ))}
-      <div style={style}></div>
     </div>
   );
 };
