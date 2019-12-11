@@ -1,7 +1,8 @@
 import React from "react";
 
 const Home = () => {
-  //chamando um codigo javascrip dentro do componente é entre {}
+  /*//chamando um codigo javascrip dentro do componente é entre {}
+  const idade = 30;
   const nav = (
     <nav>
       <ul>
@@ -10,13 +11,12 @@ const Home = () => {
         </li>
       </ul>
     </nav>
-  );
-  const idade = 30;
+    {nav}
+    {idade >= 18 ? "Pode dirigir" : "não pode digirir"}
+  );*/
   return (
     <section>
       <h1>Home</h1>
-      {nav}
-      {idade >= 18 ? "Pode dirigir" : "não pode digirir"}
     </section>
   );
 };

@@ -10,8 +10,12 @@ const Props = () => {
   }, []);
   return (
     <div>
-      <h1>Produtos</h1>
       <ProdutosLista produtos={produtos} />
+      {produtos.length > 0 ? (
+        <ProdutosLista produtos={produtos} />
+      ) : (
+        "Carregando..."
+      )}
     </div>
   );
 };
