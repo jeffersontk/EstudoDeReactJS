@@ -10,7 +10,6 @@ const Props = () => {
   }, []);
   return (
     <div>
-      <ProdutosLista produtos={produtos} />
       {produtos.length > 0 ? (
         <ProdutosLista produtos={produtos} />
       ) : (
