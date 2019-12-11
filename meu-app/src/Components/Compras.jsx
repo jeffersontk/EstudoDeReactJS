@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Compras = () => {
-  const [count, setCount] = React.useState(0);
+  const [count, setCount] = useState(0);
 
   return (
     <div>
